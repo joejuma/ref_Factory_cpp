@@ -5,9 +5,6 @@
 /* Deps */
 #include <vector>
 
-#include <cstdlib>
-#include <iostream>
-
 /* Macros */
 #define SAFE_DELETE_POINTER(ptr) if(ptr != 0)\
 {\
@@ -92,10 +89,7 @@ struct Factory
 	inline T* create()
 	{
 		T* ptr = new T();
-		std::cout << "Creating new value on heap..." << ptr << "\n";
-		std::cout << "Pushing to list (" << this->elements.size() << " -> ";
 		this->elements.push_back(ptr);
-		std::cout << this->elements.size() << ")!\n";
 		return ptr;
 	};
 	inline T* create(const T& source)
