@@ -7,21 +7,6 @@ which handles the creation, tracking and deletion of a given type of
 object. This implementation is for C++ as single-header template with 
 dependencies on the standard library.
 
-### Why isn't this a Gang of Four Factory?
-* I learned about Factories from a game programming book, when young. I 
-misremembered what they were exactly.
-* I found this structure still worked fantastically though for many of 
-my needs.
-* So it became known as a Factory, *to me*, and makes sense that way *to 
-me*.
-* I learned about Gang of Four about 4-5 years after I normalized this, 
-and by then it was too late.
-* Their version of Factory isn't readily simple to implement as a 
-generic without some seriously involved code, and requires an in-depth 
-implementation around your specific data types. I call that a factory 
-too, but it's not a simple one like this. Yes, working with my 
-nomenclature can be confusing.
-
 ## Usage
 ### Setup
 1. Grab `Factory_struct.h`
